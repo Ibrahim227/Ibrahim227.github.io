@@ -33,7 +33,7 @@ body {
     background-size: 100% 100%;
     font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
     color: var(--base-text-color);
-    background: url(../images/logo02.jpg) repeat;
+    background: url(logo02.jpg) repeat;
 }
 
 .registerbox {
@@ -166,7 +166,7 @@ a {
 }
 .header,
 .footer {
-    background: #484848 url(../images/new-bg.png) repeat;
+    background: #484848 url(new-bg.png) repeat;
     color: var(--light-text-color);
 }
 
@@ -179,7 +179,7 @@ a {
     width: auto;
     height: 250px;
     position: relative;
-    background: #484848 url(../images/logo02.png) repeat;
+    background: #484848 url(logo02.png) repeat;
 }
 .main .container p {
     color: #fff;
