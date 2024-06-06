@@ -25,6 +25,91 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--base-text-color);
+    background: url(../images/logo02.jpg) repeat;
+}
+
+.registerbox {
+    position: relative;
+    width: 320px;
+    height: 540px;
+    background: #000;
+    color: #fff;
+    top: 170%;
+    right: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    margin-bottom: 100px;
+    border-radius: 5%;
+}
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.registerbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: thin;
+}
+
+.registerbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registerbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.registerbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 18px;
+}
+
+.registerbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.registerbox a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 10px;
+    color: darkgrey;
+}
+
+.registerbox .btn {
+    background-color: red;
+    border-radius: 10%;
+}
+
+.registerbox label .str-1 {
+    color: red;
+}
+
 .icon-linkedin:before {
   content: "\e900";
   color: #0077b5;
@@ -55,7 +140,6 @@
 html {
     width: 100%;
     height: 100%;
-    box-sizing: 100%;
 }
 
 *, *::before, *::after {
@@ -64,11 +148,6 @@ html {
 
 a {
     text-decoration: none;
-}
-
-body {
-    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
-    color: var(--base-text-color);
 }
 
 .header .container {
@@ -85,11 +164,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-.container .file-source {
-    text-align: center;
-    margin-right: 350px;
-}
-
 .header,
 .footer {
     background: #484848 url(../images/new-bg.png) repeat;
@@ -102,30 +176,24 @@ body {
     justify-content: space-between;
 }
 .main .container {
-    border-cover: transparent;
-}
-.main .container h3 {
+    width: auto;
+    height: 250px;
     position: relative;
-    background-color: lightgray;
-    height: 2 10 10%;
-    text-align: center;
+    background: #484848 url(../images/logo02.png) repeat;
 }
-.main .container .title1 {
-    background-color: lightblue;
-}
-.main .container .title2 {
-    background-color: lightgray;
-}
-.main .container .title3 {
-    background-color: lightgreen;
-}
-.main .container p{
-
+.main .container p {
+    color: #fff;
+    text-align: justify;
+    font-weight: 500;
+    vertical-align: text-top;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px green;
 }
 
 .hero {
     background: #333;
-    height: 465px;
+    height: 600px;
     position: relative;
     color: var(--light-text-color);
     text-align: center;
@@ -152,57 +220,22 @@ body {
     font-size: 22px;
     line-height: 1.6364;
     max-width: 715px;
-    margin: 0 auto 50px;
+    margin: 0 auto 20px;
     margin-top: -20px;
-    margin-bottom: 100px;
 }
 
 .hero p strong {
     font-weight: 700;
 }
-.hero .choice-from {
-    background-color: lightgray;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 10%;
-    height: 30px;
-    border-radius: 10%;
+.hero .container .para {
+    color: #fff;
+    text-align: center;
+    border-style: none;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    height: 0px;
 }
-.hero .choice-from:hover {
-    background-color: #fff;
-}
-.hero div .download {
-    background-color: #fff;
-    height: 20px;
-    width: auto;
-    margin-top: 40px;
-    text-color: #fff;
-    border-radius: 10%;
-}
-.hero div .download:hover {
-    background-color: lightgreen;
-
-}
-.btn {
-    display: inline-block;
-    border-radius: 15px;
-    line-height: 50px;
-    color: var(--btn-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.7778;
-    padding: 0 55px;
-    margin: 0 11px;
-}
-.btn--green {
-    background-color: var(--green);
-    box-shadow: 0 4px 0 var(--dark-green);
-}
-.btn--blue {
-    background-color: var(--blue);
-    box-shadow: 0 4px 0 var(--dark-blue);
-}
-
 .logo {
     margin: 5px 10px 3px -10px;
     border-radius: 100%;
@@ -210,7 +243,7 @@ body {
 .slogan {
     font: italic 25px "Times New Roman", Times, Georgia, serif;
     color: var(--gray-200);
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .nav {
